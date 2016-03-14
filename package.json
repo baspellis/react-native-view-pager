@@ -1,0 +1,33 @@
+{
+  "name": "react-native-view-pager",
+  "version": "0.0.1",
+  "description": "Platform independent paged ScrollView. Mimics ViewPagerAndroid on iOS.",
+  "main": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "viewpager",
+    "scrollview",
+    "paged"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.5"
+  },
+  "author": "Bas Pellis <bas@webcomrades.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baspellis/react-native-paged-scrollview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baspellis/react-native-paged-scrollview/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/baspellis/react-native-paged-scrollview#readme"    
+  }
+}
