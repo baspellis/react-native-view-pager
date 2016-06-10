@@ -1,6 +1,6 @@
 {
   "name": "react-native-view-pager",
-  "version": "0.0.1",
+  "version": "0.2",
   "description": "Platform independent paged ScrollView. Mimics ViewPagerAndroid on iOS.",
   "main": "src",
   "scripts": {
@@ -28,6 +28,6 @@
     "url": "https://github.com/baspellis/react-native-paged-scrollview/issues"
   },
   "homepage": {
-    "url": "https://github.com/baspellis/react-native-paged-scrollview#readme"    
+    "url": "https://github.com/baspellis/react-native-paged-scrollview#readme"
   }
 }

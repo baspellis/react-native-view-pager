@@ -1,6 +1,6 @@
-import React, {
-  Component,
-  ViewPagerAndroid,
+import React, {Component} from 'react';
+import {
+  ViewPagerAndroid
 } from 'react-native';
 
 var VIEWPAGER_REF = 'viewPager';

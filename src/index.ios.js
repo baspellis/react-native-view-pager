@@ -1,7 +1,5 @@
-var ReactElement = require('ReactElement');
-
-import React, {
-  Component,
+import React, {Component} from 'react';
+import {
   ScrollView,
 } from 'react-native';
 
@@ -29,24 +27,25 @@ export default class ViewPager extends Component {
   }
 
   render() {
-    return <ScrollView 
-      {...this.props} 
+    return <ScrollView
+      {...this.props}
       ref={(scrollView) => {this._scrollView = scrollView}}
-      pagingEnabled={true} 
+      pagingEnabled={true}
       horizontal={true}
+      showsHorizontalScrollIndicator={false}
       contentOffset={{x: this.state.size.width * this._selectedPage, y: 0}}
-      onLayout={this._layoutChanged.bind(this)}   
+      onLayout={this._layoutChanged.bind(this)}
       onScroll={this._onScroll.bind(this)}
       scrollEventThrottle={16}
       onScrollBeginDrag={this._onScrollBeginDrag.bind(this)}
       onScrollEndDrag={this._onScrollEndDrag.bind(this)}
       onMomentumScrollEnd={this._onMomentumScrollEnd.bind(this)}
-      children={this._childrenWithOverridenStyle()}   
+      children={this._childrenWithOverridenStyle()}
     />
   }
   _scrollToPage(selectedPage: number, animated: bool) {
     if(selectedPage < 0 || selectedPage >= this.props.children.length) return;
-    
+
     this._scrollView.scrollTo({
       animated: animated,
       x: this.state.size.width  * selectedPage
@@ -69,7 +68,7 @@ export default class ViewPager extends Component {
     }
     if(this.props.onPageScrollStateChanged) {
       this.props.onPageScrollStateChanged('dragging');
-    }    
+    }
   }
   _onScrollEndDrag(event) {
     if(this.props.onScrollEndDrag) {
@@ -77,7 +76,7 @@ export default class ViewPager extends Component {
     }
     if(this.props.onPageScrollStateChanged) {
       this.props.onPageScrollStateChanged('settling');
-    }    
+    }
   }
   _onMomentumScrollEnd(event) {
     if(this.props.onMomentumScrollEnd) {
@@ -125,7 +124,7 @@ export default class ViewPager extends Component {
           (child.type.displayName !== 'View')) {
         console.warn('Each PagedScroll child must be a <View>. Was ' + child.type.displayName);
       }
-      return ReactElement.createElement(child.type, newProps);
+      return React.createElement(child.type, newProps);
     });
   }
 

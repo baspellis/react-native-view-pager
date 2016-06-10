@@ -1,8 +1,8 @@
 import ViewPager from 'react-native-view-pager';
 
 import moment from 'moment';
-import React, {
-  Component,
+import React, {Component} from 'react';
+import {
   StyleSheet,
   View,
   Text,
@@ -32,12 +32,12 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        <ViewPager 
+        <ViewPager
           ref={(viewPager) => {this._viewPager = viewPager}}
-          style={styles.scrollview} 
+          style={styles.scrollview}
           initialPage={this.state.page}
-          onPageScroll={this._onPageScroll.bind(this)} 
-          onPageSelected={this._onPageSelected.bind(this)} 
+          onPageScroll={this._onPageScroll.bind(this)}
+          onPageSelected={this._onPageSelected.bind(this)}
           onPageScrollStateChanged={this._onPageScrollStateChanged.bind(this)}>
           {pages}
         </ViewPager>
@@ -149,6 +149,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   message: {
-    color: '#E8DDCB',    
+    color: '#E8DDCB',
   }
 });

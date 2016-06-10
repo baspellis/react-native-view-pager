@@ -7,6 +7,7 @@ Platform independent paged ScrollView. Mimics ViewPagerAndroid on iOS.
 
 ### Content
 - [Installation](#installation)
+- [API](#api)
 - [Examples](#examples)
 
 ### Installation
