@@ -1,7 +1,4 @@
-import ViewPager from 'react-native-view-pager';
-
-import moment from 'moment';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   View,
@@ -9,6 +6,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import moment from 'moment';
+import ViewPager from 'react-native-view-pager';
 
 export default class App extends Component {
   constructor(props) {
