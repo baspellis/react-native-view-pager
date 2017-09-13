@@ -9,6 +9,6 @@
     "moment": "^2.18.1",
     "react": "^16.0.0-alpha.12",
     "react-native": "^0.47.1",
-    "react-native-view-pager": "^0.2.0"
+    "react-native-view-pager": "^0.2.2"
   }
 }
