@@ -15,6 +15,15 @@ Platform independent paged ScrollView. Mimics ViewPagerAndroid on iOS.
 npm i react-native-view-pager --save
 ```
 
+### Usage
+```jsx
+const ViewPager = require('react-native-view-pager');
+
+or
+
+import ViewPager from 'react-native-view-pager';
+```
+
 ### API
 Props
 - **initialPage** - (Integer) - Index of initial page that should be selected. Use setPage method to update the page, and onPageSelected to monitor page changes.
